@@ -1,13 +1,13 @@
 perch2-fieldtypes-customlist
 ============================
 
-The custom-content data-select field lets you add a selection box in your templates populated with the data from arbitrary pairs of columns of perch's database tables.
+The custom-content data-select field lets you add a selection box in your templates and populate them with data from arbitrary pairs of columns from perch's database tables.
 
 
 Installation
 ------------
 
-Copy the contents of the `fieldtypes` directory from thte repository into you `perch/addons/fieldtypes` directory.
+Copy the contents of the `fieldtypes` directory from the repository into your `perch/addons/fieldtypes` directory.
 
 
 Usage
@@ -22,7 +22,7 @@ the administration backend. The box will be populated with options read from the
 
 ---
 
-For example, if you want the user to be able to select a category from the shop app, you can write the following tag:
+**For instance**, if you want the user to be able to select a category from the shop app, you can write the following tag:
 
     <perch:content id="category" type="customlist" label="Select category"
                    page="shop" region="categories" options="categoryTitle" values="categorySlug"/>
@@ -44,5 +44,7 @@ Roadmap
 -------
 
 One interesting feature to add would be the possibility to repeat the tag with the same attribute and different column names to extract other predefined or user-defined content from the selected entity.
+
+Also add basic filtering of options à la *perch_ * _custom()* functions.
 
 **Contributions are welcome**
